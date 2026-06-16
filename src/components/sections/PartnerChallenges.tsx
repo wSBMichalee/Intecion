@@ -59,7 +59,7 @@ export function PartnerChallenges() {
     <section className="bg-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 mb-12">
         <h2 className="font-heading text-3xl md:text-h2 text-ink-900 font-bold">
-          Współpracujemy z firmami, które:
+          Widać te problemy w firmie na co dzień:
         </h2>
       </div>
 
@@ -72,19 +72,19 @@ export function PartnerChallenges() {
               return (
                 <div
                   key={challenge.id}
-                  className="flex-[0_0_85%] md:flex-[0_0_50%] xl:flex-[0_0_25%] min-w-0"
+                  className="flex-[0_0_85%] sm:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0"
                 >
                   <motion.div
                     variants={itemVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className={`h-full flex flex-col justify-between p-6 lg:p-10 xl:px-8 min-h-[300px] lg:min-h-[340px] transition-transform duration-300 hover:z-10 cursor-default ${challenge.bgColor} ${challenge.textColor}`}
+                    className={`h-full flex flex-col justify-between p-8 lg:p-10 min-h-[340px] transition-transform duration-300 hover:scale-[1.02] hover:z-10 cursor-default ${challenge.bgColor} ${challenge.textColor}`}
                   >
-                    <div className="mb-6">
-                      <IconComponent className="w-[70px] h-[80px]" />
+                    <div className="mb-6 opacity-80">
+                      <IconComponent className="w-16 h-16" />
                     </div>
-                    <p className="font-body text-base font-medium leading-snug">
+                    <p className="font-body text-xl font-medium leading-tight pr-4">
                       {challenge.text}
                     </p>
                   </motion.div>
@@ -103,10 +103,10 @@ export function PartnerChallenges() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={scrollPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-white flex items-center justify-center text-brand-600 z-20 shadow-[10px_0_20px_rgba(0,0,0,0.1)] hover:text-brand-500 hover:w-20 transition-all duration-300 group"
+              className="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-brand-600 rounded-full flex items-center justify-center text-white z-20 shadow-lg hover:scale-105 transition-all duration-300 ml-4 md:ml-8 group"
               aria-label="Poprzednie wyzwania"
             >
-              <ChevronLeft className="w-6 h-6 md:w-8 md:h-8 group-hover:-translate-x-1 transition-transform" />
+              <ChevronLeft className="w-8 h-8 group-hover:-translate-x-1 transition-transform" />
             </motion.button>
           )}
         </AnimatePresence>
@@ -119,10 +119,10 @@ export function PartnerChallenges() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={scrollNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-white flex items-center justify-center text-brand-600 z-20 shadow-[-10px_0_20px_rgba(0,0,0,0.1)] hover:text-brand-500 hover:w-20 transition-all duration-300 group"
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-brand-600 rounded-full flex items-center justify-center text-white z-20 shadow-lg hover:scale-105 transition-all duration-300 mr-4 md:mr-8 group"
               aria-label="Następne wyzwania"
             >
-              <ChevronRight className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-8 h-8 group-hover:translate-x-1 transition-transform" />
             </motion.button>
           )}
         </AnimatePresence>
@@ -135,13 +135,16 @@ export function PartnerChallenges() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="max-w-[1200px] mx-auto px-6 mt-16 md:mt-20"
       >
-        <div className="max-w-2xl mx-auto">
-          <p className="text-gray-600 italic text-center font-body text-base md:text-lg">
-            Tworzymy system sprzedaży, który łączy strony internetowe, marketing internetowy i rozwiązania IT, aby Twoja firma zdobywała klientów szybciej i skuteczniej
-          </p>
-          <p className="text-ink-900 font-medium text-center md:text-right mt-4 text-lg">
-            Scott Brinker
-          </p>
+        <div className="max-w-2xl mx-auto flex flex-col md:flex-row items-center gap-6">
+          <div className="w-16 h-[2px] bg-brand-600 hidden md:block flex-shrink-0" />
+          <div>
+            <p className="text-gray-500 italic font-body text-base md:text-lg">
+              Tworzymy system sprzedaży, który łączy strony internetowe, marketing internetowy i rozwiązania IT, aby Twoja firma zdobywała klientów szybciej i skuteczniej
+            </p>
+            <p className="text-ink-900 font-bold text-left mt-4 text-base tracking-wide uppercase">
+              Scott Brinker
+            </p>
+          </div>
         </div>
       </motion.div>
     </section>

@@ -30,18 +30,16 @@ export function Challenges() {
 
         <div className="flex flex-col">
           {challenges.map((challenge, index) => {
-            const hasBg = ["4", "5", "6"].includes(challenge.number);
-
             return (
               <motion.div
                 key={challenge.number}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="flex justify-between items-center py-6 md:py-8 border-b border-gray-200 gap-8"
+                className="flex justify-between items-center py-6 md:py-8 border-b border-gray-200 gap-8 hover:bg-gray-50/50 transition-colors"
               >
-                <p className="font-body text-base md:text-lg text-ink-900 max-w-full md:max-w-[70%] leading-relaxed">
+                <p className="font-body text-base md:text-xl font-medium text-ink-900 max-w-full md:max-w-[80%] leading-relaxed">
                   {challenge.text}
                 </p>
 
@@ -50,9 +48,7 @@ export function Challenges() {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className={`flex-shrink-0 flex items-center justify-center font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-brand-500 ${
-                    hasBg ? "bg-gray-50 px-4 md:px-6 py-2 rounded-lg" : "px-4 md:px-6 py-2"
-                  }`}
+                  className="flex-shrink-0 flex items-center justify-center font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-brand-500 px-4 py-2"
                 >
                   {challenge.number}
                 </motion.div>
@@ -67,11 +63,11 @@ export function Challenges() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-12 md:mt-16 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6"
+          className="mt-12 md:mt-16 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-gray-50/80 p-6 md:p-8 rounded-2xl border border-gray-100"
         >
-          <ChevronRight className="w-12 h-12 md:w-16 md:h-16 text-blue-200/50 flex-shrink-0" strokeWidth={3} />
+          <ChevronRight className="w-8 h-8 md:w-10 md:h-10 text-brand-400 flex-shrink-0" strokeWidth={3} />
           <div>
-            <p className="font-body text-brand-600 font-semibold text-lg md:text-xl">
+            <p className="font-body text-brand-600 font-bold text-lg md:text-xl">
               Jeśli rozpoznajesz to w swojej firmie - nie jesteś sam.
             </p>
             <p className="font-body text-gray-600 text-sm md:text-base mt-2 md:mt-1">

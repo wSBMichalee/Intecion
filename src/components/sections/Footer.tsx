@@ -19,7 +19,7 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 
 export function Footer() {
   return (
-    <footer className="relative bg-navy-950 py-16 md:py-24 overflow-hidden border-t border-white/5 mt-auto">
+    <footer className="relative bg-navy-950 pt-20 pb-8 overflow-hidden border-t border-white/5">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -28,10 +28,10 @@ export function Footer() {
           fill
           className="object-cover opacity-[0.15] mix-blend-lighten"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/90 to-navy-950/50" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1.5fr] gap-12 lg:gap-24 mb-16">
           
           {/* Column 1 - Brand & Contact */}

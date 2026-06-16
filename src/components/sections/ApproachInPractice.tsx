@@ -56,7 +56,7 @@ export function ApproachInPractice() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.5 }}
           className="font-heading text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#111827] font-bold mb-10 md:mb-12 leading-tight"
         >
@@ -67,7 +67,7 @@ export function ApproachInPractice() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.55 }}
           className="relative bg-white rounded-2xl overflow-hidden shadow-sm mb-6"
         >
@@ -75,7 +75,7 @@ export function ApproachInPractice() {
             {/* Left — image, fixed height container */}
             <div className="relative h-[280px] lg:h-[360px] w-full">
               <Image
-                src="/images/approach-bg.png"
+                src="/images/hero-bg-poster.jpg"
                 alt="Analiza branży i działań"
                 fill
                 className="object-cover object-center"
@@ -141,7 +141,7 @@ export function ApproachInPractice() {
                 key={card.id}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className={`relative flex flex-col justify-between min-h-[300px] p-6 lg:p-8 ${card.bg}`}
               >
