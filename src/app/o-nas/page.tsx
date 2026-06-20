@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ConsultationForm } from "@/components/sections/ConsultationForm";
 
 export default function AboutPage() {
   return (
@@ -195,11 +194,6 @@ export default function AboutPage() {
               Nie musisz podejmować decyzji od razu, zacznijmy od rozmowy!
             </motion.h2>
           </div>
-          
-          <ConsultationForm 
-            label="ZACZNIJ ZDOBYWAĆ WIĘCEJ KLIENTÓW"
-            heading="Darmowa konsultacja"
-          />
         </div>
       </main>
     </>

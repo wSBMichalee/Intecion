@@ -3,8 +3,9 @@
 import { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { testimonials } from "@/lib/constants";
+import ArrowButton from "@/components/ui/ArrowButton";
 
 export function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -25,22 +26,18 @@ export function Testimonials() {
       }}
     >
       {/* Arrow — Left */}
-      <button
-        onClick={scrollPrev}
-        aria-label="Poprzednia opinia"
-        className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#0068ad] flex items-center justify-center hover:bg-[#017bd0] hover:scale-105 transition-all duration-200"
-      >
-        <ChevronLeft className="w-5 h-5 text-white" strokeWidth={2.5} />
-      </button>
+      <ArrowButton 
+        direction="left" 
+        onClick={scrollPrev} 
+        className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20" 
+      />
 
       {/* Arrow — Right */}
-      <button
-        onClick={scrollNext}
-        aria-label="Następna opinia"
-        className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#0068ad] flex items-center justify-center hover:bg-[#017bd0] hover:scale-105 transition-all duration-200"
-      >
-        <ChevronRight className="w-5 h-5 text-white" strokeWidth={2.5} />
-      </button>
+      <ArrowButton 
+        direction="right" 
+        onClick={scrollNext} 
+        className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20" 
+      />
 
       {/* Content — centered, max-width to avoid overlapping arrows */}
       <div className="text-center px-16 md:px-20 lg:px-24">

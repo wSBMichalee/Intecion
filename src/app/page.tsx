@@ -6,7 +6,6 @@ import { ApproachInPractice } from "@/components/sections/ApproachInPractice";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Portfolio } from "@/components/sections/Portfolio";
-import { ConsultationForm } from "@/components/sections/ConsultationForm";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { BlueCta } from "@/components/sections/BlueCta";
 import { Services } from "@/components/sections/Services";
@@ -24,15 +23,10 @@ export default function Home() {
         <CtaBanner />
         <Portfolio />
         <Testimonials />
-        <ConsultationForm />
         <ProcessSteps />
         <BlueCta />
         <Services />
         <Faq />
-        <ConsultationForm 
-          label="DOWIEDZ SIĘ JAK ZWIĘKSZYĆ SWOJĄ SPRZEDAŻ. POROZMAWIAJMY!" 
-          heading="Najwyższy czas zrobić coś dobrego!" 
-        />
       </main>
     </>
   );

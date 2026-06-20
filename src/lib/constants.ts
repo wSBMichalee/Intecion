@@ -74,3 +74,42 @@ export const testimonials = [
   },
   // TODO: dodaj więcej opinii
 ];
+
+export const portfolioProjects = [
+  {
+    id: "ecocar",
+    logoType: "image",
+    logoSrc: "/images/partners/ecocar-logo.png",
+    logoText: null,
+    accentColor: "#6cc24a",
+    bgColor: "bg-[#f0f7e8]",
+    headline: "Stabilny wzrost sprzedaży",
+    description: "Systematyczne działania SEO i content marketingowe zapewniły ciągły strumień nowych użytkowników i wyższą sprzedaż.",
+    tags: ["STRONA INTERNETOWA & UX", "BLOG", "SEO LOKALNE"],
+    imageSrc: "/images/case-studies/ecocar-laptop.png",
+  },
+  {
+    id: "vanstev",
+    logoType: "text",
+    logoSrc: null,
+    logoText: "VANSTEV",
+    accentColor: "#f97316",
+    bgColor: "bg-[#fff7ed]",
+    headline: "Stabilny wzrost sprzedaży",
+    description: "Systematyczne działania SEO i content marketingowe zapewniły ciągły strumień nowych użytkowników i wyższą sprzedaż.",
+    tags: ["STRONA INTERNETOWA & UX", "BLOG", "SEO LOKALNE"],
+    imageSrc: "/images/case-studies/vanstev-laptop.png",
+  },
+  {
+    id: "ows",
+    logoType: "text-icon",
+    logoSrc: null,
+    logoText: "ONE WORLD SOLUTION",
+    accentColor: "#0ea5e9",
+    bgColor: "bg-[#f0f8ff]",
+    headline: "Stabilny wzrost sprzedaży",
+    description: "Systematyczne działania SEO i content marketingowe zapewniły ciągły strumień nowych użytkowników i wyższą sprzedaż.",
+    tags: ["STRONA INTERNETOWA & UX", "BLOG", "SEO LOKALNE"],
+    imageSrc: "/images/case-studies/ows-laptop.png",
+  }
+];

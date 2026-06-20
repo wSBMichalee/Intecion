@@ -56,21 +56,14 @@ export default function ContactPage() {
                 </h2>
 
                 <div className="flex flex-col gap-8">
-                  <div className="flex flex-col gap-2">
-                    <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase font-heading">
-                      ZADZWOŃ DO NAS
-                    </span>
-                    <a href="tel:+48519730649" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-brand-500">
-                      +48 519 730 649
-                    </a>
-                  </div>
+
 
                   <div className="flex flex-col gap-2">
                     <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase font-heading">
                       ZOSTAW NAM WIADOMOŚĆ
                     </span>
-                    <a href="mailto:hello@intecion.pl" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-brand-500">
-                      hello@intecion.pl
+                    <a href="mailto:hello@intecion.com" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-brand-500">
+                      hello@intecion.com
                     </a>
                   </div>
 
@@ -126,7 +119,7 @@ export default function ContactPage() {
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 placeholder:font-bold placeholder:tracking-widest placeholder:text-xs focus:outline-none focus:border-brand-500 transition-colors backdrop-blur-sm resize-none"
                     ></textarea>
                   </div>
-                  <Button variant="primary" className="w-full justify-center py-4 mt-2">
+                  <Button className="w-full justify-center mt-2">
                     WYŚLIJ
                   </Button>
                 </form>

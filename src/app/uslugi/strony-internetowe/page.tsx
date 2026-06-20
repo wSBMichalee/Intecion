@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronRight, Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { ConsultationForm } from "@/components/sections/ConsultationForm";
 import { Faq, FaqItem } from "@/components/sections/Faq";
 
 const websitesFaq: FaqItem[] = [
@@ -82,8 +81,8 @@ export default function WebsitesServices() {
                   Wykorzystujemy najnowsze technologie, by tworzyć strony, które nie tylko pięknie wyglądają, ale przede wszystkim - generują sprzedaż. Tworzymy stabilne, bezpieczne i szybkie strony internetowe oraz aplikacje webowe.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                  <Button variant="primary">POROZMAWIAJMY</Button>
-                  <Button variant="outline" className="text-white border-white/20 hover:bg-white/5 hover:border-white/40">
+                  <Button>POROZMAWIAJMY</Button>
+                  <Button className="text-white border-white/20 hover:bg-white/5 hover:border-white/40">
                     WYCEŃ PROJEKT
                   </Button>
                 </div>
@@ -238,7 +237,7 @@ export default function WebsitesServices() {
                 </div>
                 
                 <div className="mt-8">
-                  <Button variant="outline" className="text-brand-400 border-white/10 hover:bg-brand-500/10">
+                  <Button className="text-brand-400 border-white/10 hover:bg-brand-500/10">
                     DARMOWA KONSULTACJA
                   </Button>
                 </div>
@@ -283,7 +282,7 @@ export default function WebsitesServices() {
                   </ul>
                   
                   <div className="mt-auto pt-6">
-                    <Button variant="primary">DARMOWA KONSULTACJA</Button>
+                    <Button>DARMOWA KONSULTACJA</Button>
                   </div>
                 </div>
               </motion.div>
@@ -402,7 +401,7 @@ export default function WebsitesServices() {
             </div>
 
             <div className="mt-12 flex justify-center md:justify-end">
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/5 hover:border-white/40">
+              <Button className="text-white border-white/20 hover:bg-white/5 hover:border-white/40">
                 ZOBACZ PORTFOLIO
               </Button>
             </div>
@@ -483,7 +482,7 @@ export default function WebsitesServices() {
                 <h3 className="text-white font-bold text-2xl mb-2">Masz pytania, pisz do nas</h3>
                 <p className="text-brand-100 font-body">Odpowiadamy zazwyczaj w kilkanaście minut.</p>
               </div>
-              <Button variant="secondary" className="bg-white text-brand-600 hover:bg-gray-50 flex-shrink-0">
+              <Button className="bg-white text-brand-600 hover:bg-gray-50 flex-shrink-0 border-none shadow-sm">
                 POROZMAWIAJMY
               </Button>
             </motion.div>
@@ -492,12 +491,6 @@ export default function WebsitesServices() {
 
         {/* FAQ SECTION */}
         <Faq questions={websitesFaq} />
-
-        {/* FINAL CTA SECTION */}
-        <ConsultationForm 
-          label="ZAPYTAJ O WYCENĘ SWOJEJ STRONY"
-          heading="Nie znalazłeś odpowiedzi? Umów darmową konsultację"
-        />
 
       </main>
     </>

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ConsultationForm } from "@/components/sections/ConsultationForm";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import ArrowButton from "@/components/ui/ArrowButton";
 
 const caseStudies = [
   {
@@ -190,12 +190,14 @@ export default function PortfolioPage() {
               </div>
 
               {/* Slider Arrows */}
-              <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center cursor-pointer hover:bg-brand-400 transition-colors">
-                <ChevronLeft className="w-6 h-6 text-white" />
-              </div>
-              <div className="absolute top-1/2 -translate-y-1/2 right-0 w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center cursor-pointer hover:bg-brand-400 transition-colors">
-                <ChevronRight className="w-6 h-6 text-white" />
-              </div>
+              <ArrowButton 
+                direction="left" 
+                className="absolute top-1/2 -translate-y-1/2 left-0 z-20" 
+              />
+              <ArrowButton 
+                direction="right" 
+                className="absolute top-1/2 -translate-y-1/2 right-0 z-20" 
+              />
             </motion.div>
           </div>
         </section>
@@ -211,12 +213,6 @@ export default function PortfolioPage() {
               Oni już sprzedają. Pora na Twój ruch!
             </motion.h2>
         </div>
-
-        {/* CTA FORM SECTION */}
-        <ConsultationForm 
-          label="DARMOWA KONSULTACJA"
-          heading="Darmowa konsultacja"
-        />
       </main>
     </>
   );

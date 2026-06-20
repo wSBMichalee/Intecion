@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
@@ -10,7 +10,7 @@ const LIST_ITEMS = [
   "OPROGRAMOWANIE I INFRASTRUKTURA IT",
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -21,7 +21,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, x: -12 },
   visible: {
     opacity: 1,
@@ -104,10 +104,8 @@ export function Hero() {
           </p>
           <div className="w-full md:w-auto flex justify-center">
             <Button
-              variant="primary"
               size="lg"
               href="#kontakt"
-              icon
               className="w-full md:w-auto"
             >
               DARMOWA KONSULTACJA

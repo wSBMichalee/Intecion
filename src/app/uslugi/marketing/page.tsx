@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Target, Search, BarChart3, TrendingUp, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { ConsultationForm } from "@/components/sections/ConsultationForm";
 import { Faq, FaqItem } from "@/components/sections/Faq";
 
 const marketingFaq: FaqItem[] = [
@@ -76,7 +75,7 @@ export default function MarketingServices() {
                 </p>
                 <div className="flex gap-4 mt-4">
                   <div className="flex flex-col gap-2">
-                    <Button variant="primary">ZAPYTAJ O WYCENĘ</Button>
+                    <Button>ZAPYTAJ O WYCENĘ</Button>
                     <span className="text-gray-400 text-xs font-body ml-2">Darmowa wycena w 24h</span>
                   </div>
                 </div>
@@ -388,7 +387,7 @@ export default function MarketingServices() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <Button variant="primary">
+              <Button>
                 POROZMAWIAJMY
               </Button>
             </motion.div>
@@ -440,11 +439,6 @@ export default function MarketingServices() {
         {/* FAQ SECTION */}
         <Faq questions={marketingFaq} />
 
-        {/* FINAL CTA SECTION */}
-        <ConsultationForm 
-          label="ZACZNIJ ZDOBYWAĆ WIĘCEJ KLIENTÓW"
-          heading="Sprawdźmy jak możemy poprawić Twój marketing!"
-        />
       </main>
     </>
   );

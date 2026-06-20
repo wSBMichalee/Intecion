@@ -74,7 +74,6 @@ export function Navbar() {
             </div>
             
             <Button
-              variant="navbar"
               size="sm"
               href="/konsultacja"
               showIcon={false}
@@ -136,7 +135,6 @@ export function Navbar() {
               ))}
               
               <Button
-                variant="primary"
                 href="/konsultacja"
                 className="w-full mt-4"
                 onClick={() => setIsMobileMenuOpen(false)}

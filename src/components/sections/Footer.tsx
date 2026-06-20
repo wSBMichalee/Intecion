@@ -42,7 +42,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-white font-bold text-base hover:text-brand-400 transition-colors">
-              <a href="mailto:hello@intecion.pl">hello@intecion.pl</a>
+              <a href="mailto:hello@intecion.com">hello@intecion.com</a>
             </p>
             <div className="flex flex-col gap-1 leading-relaxed text-gray-400">
               <p>Intecion Sp. z o.o.</p>

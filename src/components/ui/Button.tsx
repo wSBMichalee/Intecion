@@ -1,66 +1,91 @@
+"use client";
+
+import React from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import React from "react";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "outline" | "navbar";
-  size?: "default" | "sm" | "lg";
+interface ButtonProps {
+  children: React.ReactNode;
   href?: string;
+  onClick?: () => void;
+  className?: string;
   showIcon?: boolean;
+  size?: "sm" | "md" | "lg";
 }
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "primary", size = "default", href, showIcon = true, children, ...props }, ref) => {
-    const isPrimary = variant === "primary";
-    const isNavbar = variant === "navbar";
+export function Button({
+  children,
+  href,
+  onClick,
+  className,
+  showIcon = true,
+  size = "md",
+}: ButtonProps) {
+  const sizeStyles = {
+    left: {
+      sm: "px-4 py-2 text-xs",
+      md: "px-6 py-3 text-sm",
+      lg: "px-8 py-4 text-base",
+    },
+    right: {
+      sm: "w-10",
+      md: "w-12",
+      lg: "w-14",
+    },
+  };
 
-    const baseStyles = cn(
-      "group inline-flex items-stretch justify-center font-mono font-medium transition-all focus:outline-none focus:ring-2 focus:ring-brand-500 overflow-hidden uppercase",
-      isNavbar 
-        ? "bg-gradient-to-r from-[#0983d8] to-[#3a9fd9] text-white rounded-xl shadow-sm hover:opacity-90" 
-        : isPrimary 
-          ? "bg-brand-600 text-white rounded-lg" 
-          : "border border-white/10 bg-transparent text-white rounded-lg",
-      className
-    );
-
-    const content = (
-      <>
-        <span className={cn(
-          "flex items-center justify-center flex-1 transition-colors",
-          size === "lg" ? "px-8 py-4 text-base" : size === "sm" ? "px-6 py-2.5 text-xs tracking-wide" : "px-6 py-3 text-sm tracking-wide",
-          !isNavbar && (isPrimary ? "group-hover:bg-brand-500" : "group-hover:bg-white/5")
-        )}>
-          {children}
-        </span>
-        
-        {showIcon && !isNavbar && (
-          <span className={cn(
-            "flex items-center justify-center transition-colors shrink-0",
-            size === "lg" ? "w-14" : "w-12",
-            isPrimary ? "bg-[#2596d1] group-hover:bg-[#34a4df]" : "border-l border-white/10 bg-white/5 group-hover:bg-white/10"
-          )}>
-            <ChevronRight className="h-5 w-5 text-white transition-transform duration-300 group-hover:translate-x-1" />
-          </span>
+  const innerContent = (
+    <motion.div
+      className={cn("rounded-lg overflow-hidden flex w-fit group cursor-pointer", className)}
+      whileHover="hover"
+      initial="initial"
+    >
+      {/* Left segment */}
+      <div
+        className={cn(
+          "bg-brand-600 text-white group-hover:bg-white group-hover:text-brand-600 font-mono uppercase tracking-wide flex items-center justify-center transition-colors duration-200 ease-in-out",
+          sizeStyles.left[size]
         )}
-      </>
-    );
+      >
+        {children}
+      </div>
 
-    if (href) {
-      return (
-        <Link href={href} className={baseStyles}>
-          {content}
-        </Link>
-      );
-    }
+      {/* Right segment */}
+      {showIcon && (
+        <div
+          className={cn(
+            "bg-white group-hover:bg-brand-600 flex items-center justify-center transition-colors duration-200 ease-in-out",
+            sizeStyles.right[size]
+          )}
+        >
+          <motion.div
+            variants={{
+              initial: { x: 0 },
+              hover: { x: 3 }
+            }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="text-brand-600 group-hover:text-white transition-colors duration-200 ease-in-out"
+          >
+            <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
+          </motion.div>
+        </div>
+      )}
+    </motion.div>
+  );
 
+  if (href) {
     return (
-      <button ref={ref} className={baseStyles} {...props}>
-        {content}
-      </button>
+      <Link href={href} className="w-fit block" onClick={onClick}>
+        {innerContent}
+      </Link>
     );
   }
-);
 
-Button.displayName = "Button";
+  return (
+    <button className="p-0 border-none bg-transparent outline-none w-fit block" onClick={onClick}>
+      {innerContent}
+    </button>
+  );
+}

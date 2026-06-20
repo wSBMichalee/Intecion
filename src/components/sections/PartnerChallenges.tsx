@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
+import ArrowButton from "@/components/ui/ArrowButton";
 import { partnerChallenges } from "@/lib/constants";
 import { SparkleIcon, HexagonIcon, DiamondIcon, WaveIcon, NetworkIcon, OrbitIcon } from "@/components/ui/icons/ChallengeIcons";
 
@@ -16,7 +16,7 @@ const ICONS = {
   orbit: OrbitIcon,
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -97,33 +97,29 @@ export function PartnerChallenges() {
         {/* Carousel Arrows */}
         <AnimatePresence>
           {canScrollPrev && (
-            <motion.button 
+            <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              onClick={scrollPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-brand-600 rounded-full flex items-center justify-center text-white z-20 shadow-lg hover:scale-105 transition-all duration-300 ml-4 md:ml-8 group"
-              aria-label="Poprzednie wyzwania"
+              className="absolute left-0 top-1/2 -translate-y-1/2 ml-4 md:ml-8 z-20"
             >
-              <ChevronLeft className="w-8 h-8 group-hover:-translate-x-1 transition-transform" />
-            </motion.button>
+              <ArrowButton direction="left" onClick={scrollPrev} variant="white" className="shadow-lg" />
+            </motion.div>
           )}
         </AnimatePresence>
 
         <AnimatePresence>
           {canScrollNext && (
-            <motion.button 
+            <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              onClick={scrollNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-brand-600 rounded-full flex items-center justify-center text-white z-20 shadow-lg hover:scale-105 transition-all duration-300 mr-4 md:mr-8 group"
-              aria-label="Następne wyzwania"
+              className="absolute right-0 top-1/2 -translate-y-1/2 mr-4 md:mr-8 z-20"
             >
-              <ChevronRight className="w-8 h-8 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+              <ArrowButton direction="right" onClick={scrollNext} variant="white" className="shadow-lg" />
+            </motion.div>
           )}
         </AnimatePresence>
       </div>

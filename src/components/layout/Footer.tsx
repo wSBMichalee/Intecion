@@ -19,70 +19,63 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 
 export function Footer() {
   return (
-    <footer className="relative bg-navy-950 py-16 md:py-24 overflow-hidden border-t border-white/5 mt-auto">
+    <footer className="relative bg-navy-950 pt-16 md:pt-24 pb-8 overflow-hidden mt-auto border-t border-white/5">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg-poster.jpg"
+          src="/images/approach-bg.png"
           alt="Background overlay"
           fill
-          className="object-cover opacity-[0.15] mix-blend-lighten"
+          className="object-cover object-center opacity-[0.45] mix-blend-lighten"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/90 to-transparent" />
+        <div className="absolute inset-0 bg-navy-950/40" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1.5fr] gap-12 lg:gap-24 mb-16">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6">
+        
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1.5fr] gap-8 lg:gap-16">
           
           {/* Column 1 - Brand & Contact */}
-          <div className="flex flex-col gap-6 text-gray-400 text-sm font-body">
-            <Link href="/" className="mb-2">
-              <div className="text-3xl font-black text-white tracking-wider flex items-center">
-                inte<span className="text-brand-500">c</span>ion
-              </div>
+          <div className="flex flex-col text-[11px] lg:text-[12px] font-mono text-gray-300">
+            <Link href="/" className="mb-6 block">
+              <Image 
+                src="/images/logo-intecion.png" 
+                alt="Intecion" 
+                width={200} 
+                height={55} 
+                className="h-auto w-40 lg:w-48" 
+              />
             </Link>
-            <p className="text-white font-bold text-base hover:text-brand-400 transition-colors">
-              <a href="mailto:hello@intecion.pl">hello@intecion.pl</a>
-            </p>
-            <div className="flex flex-col gap-1 leading-relaxed text-gray-400">
-              <p>Intecion Sp. z o.o.</p>
-              <p>ul. Wejherowska 12/24</p>
-              <p>54-239 Wrocław</p>
+            <div className="mb-3 text-white font-medium text-[12px] lg:text-[13px]">
+              <a href="mailto:HELLO@INTECION.PL" className="hover:text-brand-400 transition-colors">HELLO@INTECION.PL</a>
             </div>
-            <div className="flex flex-col gap-1 text-xs text-gray-500">
+            <div className="w-full max-w-[280px] h-px bg-white/20 mb-5"></div>
+            <div className="flex flex-col gap-1 mb-5 leading-relaxed">
+              <p>UL.WEJHEROWSKA 11/2,</p>
+              <p>54-239 WROCŁAW</p>
+            </div>
+            <div className="flex flex-col gap-1 leading-relaxed">
               <p>NIP: 8943247729</p>
               <p>REGON: 540126622</p>
               <p>KRS: 0001136777</p>
             </div>
-            {/* Social Icons */}
-            <div className="flex items-center gap-4 mt-2">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-600 hover:border-brand-500 transition-all">
-                <InstagramIcon className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-600 hover:border-brand-500 transition-all">
-                <LinkedinIcon className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
-          {/* Column 2 - Links (Na skróty) */}
-          <div className="flex flex-col gap-6">
-            <h4 className="font-heading text-xs font-bold text-gray-500 uppercase tracking-widest">
-              NA SKRÓTY
-            </h4>
-            <ul className="flex flex-col gap-4 text-sm font-body text-gray-300">
-              <li>
-                <Link href="/o-nas" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">
+          {/* Column 2 - Links (O NAS, itp) */}
+          <div className="flex flex-col justify-start">
+            <ul className="flex flex-col text-[10px] lg:text-[11px] font-mono text-gray-300 font-medium w-full max-w-[220px]">
+              <li className="border-b border-white/10 pb-2.5 mb-2.5">
+                <Link href="/o-nas" className="hover:text-brand-400 transition-colors block w-full">
                   O NAS
                 </Link>
               </li>
-              <li>
-                <Link href="/portfolio" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">
+              <li className="border-b border-white/10 pb-2.5 mb-2.5">
+                <Link href="/portfolio" className="hover:text-brand-400 transition-colors block w-full">
                   NASZE PORTFOLIO
                 </Link>
               </li>
-              <li>
-                <Link href="/polityka-prywatnosci" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">
+              <li className="border-b border-white/10 pb-2.5">
+                <Link href="/polityka-prywatnosci" className="hover:text-brand-400 transition-colors block w-full">
                   POLITYKA PRYWATNOŚCI
                 </Link>
               </li>
@@ -90,26 +83,59 @@ export function Footer() {
           </div>
 
           {/* Column 3 - Links (Usługi) */}
-          <div className="flex flex-col gap-6">
-            <h4 className="font-heading text-xs font-bold text-gray-500 uppercase tracking-widest">
-              USŁUGI
-            </h4>
-            <ul className="flex flex-col gap-4 text-sm font-body text-gray-300">
-              <li><Link href="/uslugi/strony-internetowe" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">TWORZENIE STRON INTERNETOWYCH</Link></li>
-              <li><Link href="/uslugi/aplikacje-mobilne" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">TWORZENIE APLIKACJI MOBILNYCH</Link></li>
-              <li><Link href="/uslugi/marketing" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">MARKETING I POZYCJONOWANIE</Link></li>
-              <li><Link href="/uslugi/dedykowane-oprogramowanie" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">DEDYKOWANE OPROGRAMOWANIE</Link></li>
-              <li><Link href="/uslugi/infrastruktura-it" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">INFRASTRUKTURA IT</Link></li>
-              <li><Link href="/uslugi/outsourcing-it" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">OUTSOURCING IT</Link></li>
-              <li><Link href="/uslugi/szkolenia" className="hover:text-brand-400 transition-colors uppercase text-[11px] tracking-wider">SZKOLENIA Z CYBERBEZPIECZEŃSTWA</Link></li>
+          <div className="flex flex-col justify-start">
+            <ul className="flex flex-col text-[10px] lg:text-[11px] font-mono text-gray-300 font-medium w-full max-w-[280px] md:ml-auto">
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/strony-internetowe" className="hover:text-brand-400 transition-colors block w-full">
+                  TWORZENIE STRON INTERNETOWYCH
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/aplikacje-mobilne" className="hover:text-brand-400 transition-colors block w-full">
+                  TWORZENIE APLIKACJI MOBILNYCH
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/marketing" className="hover:text-brand-400 transition-colors block w-full">
+                  MARKETING I POZYCJONOWANIE
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/dedykowane-oprogramowanie" className="hover:text-brand-400 transition-colors block w-full">
+                  DEDYKOWANE OPROGRAMOWANIE
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/infrastruktura-it" className="hover:text-brand-400 transition-colors block w-full">
+                  INFRASTRUKTURA IT
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2 mb-2">
+                <Link href="/uslugi/outsourcing-it" className="hover:text-brand-400 transition-colors block w-full">
+                  OUTSOURCING IT
+                </Link>
+              </li>
+              <li className="border-b border-white/10 pb-2">
+                <Link href="/uslugi/szkolenia" className="hover:text-brand-400 transition-colors block w-full">
+                  SZKOLENIA Z CYBERBEZPIECZEŃSTWA
+                </Link>
+              </li>
             </ul>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-center items-center text-xs text-gray-500 font-body">
-          <p>&copy; {new Date().getFullYear()} Intecion. Wszystkie prawa zastrzeżone.</p>
+        {/* Bottom Bar: Social & Copyright */}
+        <div className="flex flex-col items-center mt-12 text-[10px] lg:text-[11px] font-mono text-gray-400">
+          <div className="flex items-center gap-2 mb-2.5">
+            <a href="#" className="w-7 h-7 flex items-center justify-center border border-white/30 rounded-md text-white hover:bg-white/10 transition-all">
+              <InstagramIcon className="w-3.5 h-3.5" />
+            </a>
+            <a href="#" className="w-7 h-7 flex items-center justify-center border border-white/30 rounded-md text-white hover:bg-white/10 transition-all">
+              <LinkedinIcon className="w-3.5 h-3.5" />
+            </a>
+          </div>
+          <p>&copy; 2026 INTECION Wszystkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>
