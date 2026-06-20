@@ -35,7 +35,7 @@ export function Hero() {
   const y = useTransform(scrollY, [0, 600], [0, 60]);
 
   return (
-    <section className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden max-w-[1900px] mx-auto w-full rounded-[20px]">
       {/* Background Parallax Wrapper */}
       <motion.div 
         style={{ y }} 

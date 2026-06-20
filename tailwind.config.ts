@@ -33,13 +33,19 @@ const config: Config = {
         container: "1200px",
       },
       fontFamily: {
-        heading: ["var(--font-poppins)", "sans-serif"],
+        heading: ["var(--font-inter)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-jetbrains-mono)", "monospace"],
       },
       borderRadius: {
-        "2xl": "1rem",
+        "lg": "12px",
+        "xl": "16px",
+        "2xl": "20px",
       },
+      boxShadow: {
+        "card": "0 10px 30px rgba(0,0,0,.20)",
+        "glow": "0 20px 60px rgba(0,0,0,.35)",
+      }
     },
   },
   plugins: [],

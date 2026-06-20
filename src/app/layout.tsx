@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${poppins.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col selection:bg-brand-500/30 bg-navy-950">
+      <body className="antialiased min-h-screen flex flex-col selection:bg-brand-500/30 bg-[#FFFFFF]">
         <Navbar />
         <main className="flex-1">
           {children}

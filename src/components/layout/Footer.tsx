@@ -47,12 +47,12 @@ export function Footer() {
               />
             </Link>
             <div className="mb-3 text-white font-medium text-[12px] lg:text-[13px]">
-              <a href="mailto:HELLO@INTECION.PL" className="hover:text-brand-400 transition-colors">HELLO@INTECION.PL</a>
+              <a href="mailto:hello@intecion.pl" className="hover:text-brand-400 transition-colors">hello@intecion.pl</a>
             </div>
             <div className="w-full max-w-[280px] h-px bg-white/20 mb-5"></div>
             <div className="flex flex-col gap-1 mb-5 leading-relaxed">
-              <p>UL.WEJHEROWSKA 11/2,</p>
-              <p>54-239 WROCŁAW</p>
+              <p>ul. Wejherowska 11/2,</p>
+              <p>54-239 Wrocław</p>
             </div>
             <div className="flex flex-col gap-1 leading-relaxed">
               <p>NIP: 8943247729</p>

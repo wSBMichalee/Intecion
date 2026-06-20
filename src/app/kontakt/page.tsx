@@ -11,7 +11,8 @@ export default function ContactPage() {
     <>
       <main className="flex-1">
         {/* HERO SECTION */}
-        <section className="relative bg-navy-950 pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden border-b border-white/5">
+        <div className="bg-white pb-20 lg:pb-32">
+<section className="relative bg-navy-950 flex flex-col justify-center overflow-hidden border-b border-white/5 w-full max-w-[1900px] mx-auto h-[735px] rounded-[20px] pt-20">
           <div className="absolute inset-0 z-0 opacity-20">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           </div>
@@ -33,6 +34,7 @@ export default function ContactPage() {
             </motion.div>
           </div>
         </section>
+        </div>
 
         {/* DARK SECTION: MASZ WIZJĘ? */}
         <section className="bg-navy-950 py-20 lg:py-32 relative overflow-hidden">
@@ -60,16 +62,25 @@ export default function ContactPage() {
 
                   <div className="flex flex-col gap-2">
                     <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase font-heading">
-                      ZOSTAW NAM WIADOMOŚĆ
+                      ZADZWOŃ DO NAS
                     </span>
-                    <a href="mailto:hello@intecion.com" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-brand-500">
-                      hello@intecion.com
+                    <a href="tel:+48519730649" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-transparent hover:border-brand-500">
+                      +48 519 730 649
+                    </a>
+                  </div>
+
+                  <div className="flex flex-col gap-2">
+                    <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase font-heading">
+                      Zostaw nam wiadomość
+                    </span>
+                    <a href="mailto:hello@intecion.pl" className="text-white font-bold text-2xl hover:text-brand-400 transition-colors w-fit pb-1 border-b-2 border-brand-500">
+                      hello@intecion.pl
                     </a>
                   </div>
 
                   <div className="flex flex-col gap-3">
                     <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase font-heading">
-                      ZNAJDZIESZ NAS TEŻ TUTAJ!
+                      Znajdziesz nas też tutaj!
                     </span>
                     <div className="flex items-center gap-4 mt-2">
                       <a href="#" className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:border-brand-500 transition-all group">
@@ -94,21 +105,21 @@ export default function ContactPage() {
                   <div>
                     <input
                       type="text"
-                      placeholder="IMIĘ"
+                      placeholder="Imię"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 placeholder:font-bold placeholder:tracking-widest placeholder:text-xs focus:outline-none focus:border-brand-500 transition-colors backdrop-blur-sm"
                     />
                   </div>
                   <div>
                     <input
                       type="email"
-                      placeholder="E-MAIL"
+                      placeholder="E-mail"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 placeholder:font-bold placeholder:tracking-widest placeholder:text-xs focus:outline-none focus:border-brand-500 transition-colors backdrop-blur-sm"
                     />
                   </div>
                   <div>
                     <input
                       type="tel"
-                      placeholder="TELEFON"
+                      placeholder="Telefon"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 placeholder:font-bold placeholder:tracking-widest placeholder:text-xs focus:outline-none focus:border-brand-500 transition-colors backdrop-blur-sm"
                     />
                   </div>
@@ -119,8 +130,8 @@ export default function ContactPage() {
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 placeholder:font-bold placeholder:tracking-widest placeholder:text-xs focus:outline-none focus:border-brand-500 transition-colors backdrop-blur-sm resize-none"
                     ></textarea>
                   </div>
-                  <Button className="w-full justify-center mt-2">
-                    WYŚLIJ
+                  <Button className="w-full justify-center mt-2 lowercase [font-variant:small-caps]">
+                    wyślij
                   </Button>
                 </form>
               </motion.div>

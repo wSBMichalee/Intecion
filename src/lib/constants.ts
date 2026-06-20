@@ -85,7 +85,7 @@ export const portfolioProjects = [
     bgColor: "bg-[#f0f7e8]",
     headline: "Stabilny wzrost sprzedaży",
     description: "Systematyczne działania SEO i content marketingowe zapewniły ciągły strumień nowych użytkowników i wyższą sprzedaż.",
-    tags: ["STRONA INTERNETOWA & UX", "BLOG", "SEO LOKALNE"],
+    tags: ["strona nternetowa & ux", "blog", "seo lokalne"],
     imageSrc: "/images/case-studies/ecocar-laptop.png",
   },
   {

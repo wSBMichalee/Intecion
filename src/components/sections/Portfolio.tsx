@@ -84,7 +84,7 @@ export function Portfolio() {
             Projekty, z których jesteśmy dumni
           </h2>
           <p className="font-body text-gray-500 text-lg">
-            Zobacz, jak nasze strategie i rozwiązania przekładają się na realne wyniki i sukcesy naszych klientów.
+            Zobacz, jakie rezultaty osiągają wyjątkowe firmy, z którymi współpracujemy.
           </p>
         </motion.div>
       </div>
@@ -131,7 +131,7 @@ export function Portfolio() {
                           {project.tags.map((tag, i) => (
                             <span 
                               key={i} 
-                              className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm text-white shadow-sm"
+                              className="px-4 py-1.5 text-[16px] font-mono font-semibold tracking-wider rounded-sm text-white shadow-sm"
                               style={{ 
                                 backgroundColor: project.accentColor, 
                               }}

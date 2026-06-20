@@ -3,11 +3,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import React from "react";
 
 export interface FaqItem {
   id: number;
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const defaultFaqs: FaqItem[] = [
@@ -111,9 +112,9 @@ export function Faq({ questions = defaultFaqs }: FaqProps) {
                     >
                       <div className="px-6 pb-6 pt-2">
                         <div className="w-full h-px bg-gray-100 mb-4"></div>
-                        <p className="font-body text-gray-600 leading-relaxed">
+                        <div className="font-body text-gray-600 leading-relaxed">
                           {faq.answer}
-                        </p>
+                        </div>
                       </div>
                     </motion.div>
                   )}

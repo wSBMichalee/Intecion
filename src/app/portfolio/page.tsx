@@ -8,43 +8,53 @@ import ArrowButton from "@/components/ui/ArrowButton";
 const caseStudies = [
   {
     id: 1,
-    client: "VANSTEV",
+    client: "VanStev",
     title: "Stabilny wzrost sprzedaży",
     desc1: <><strong className="text-ink-900 font-black">Branża:</strong> Outsourcing Specjalistów i Rekrutacja Międzynarodowa<br/><strong className="text-ink-900 font-black">Zakres:</strong> Strona firmowa, UX/UI Design, Oferty pracy, Galeria projektów</>,
-    desc2: "Vanstev potrzebował platformy, która ułatwi kandydatom aplikowanie na oferty pracy i pozwoli firmom szybko nawiązać współpracę. Zaprojektowaliśmy intuicyjny UX, nowoczesny UI i zoptymalizowane formularze, dzięki czemu użytkownicy szybciej znajdują oferty, a firma wzmacnia swój wizerunek rzetelnego partnera HR.",
-    hex: "#e85a11",
-    tags: ["WZROST KONWERSJI O 15%", "WZROST LICZBY ZGŁOSZEŃ O X%", "POPRAWA DOŚWIADCZENIA UŻYTKOWNIKÓW"],
-    mockup: "Vanstev Laptop Mockup"
+    desc2: "VanStev potrzebował platformy, która ułatwi kandydatom aplikowanie na oferty pracy i pozwoli firmom szybko nawiązać współpracę. Zaprojektowaliśmy intuicyjny UX, nowoczesny UI i zoptymalizowane formularze, dzięki czemu użytkownicy szybciej znajdują oferty, a firma wzmacnia swój wizerunek rzetelnego partnera HR",
+    hex: "#E56813",
+    tags: ["Wzrost konwersji o x%", "Wzrost liczby zgłoszeń o x%", "Poprawa doświadczenia użytkowników"],
+    mockup: "VanStev Laptop Mockup"
   },
   {
     id: 2,
-    client: "EcoCar",
+    client: "EcoCar Detailing",
     title: "Stabilny wzrost sprzedaży",
-    desc1: <><strong className="text-ink-900 font-black">Branża:</strong> Auto Detailing / Pielęgnacja pojazdów<br/><strong className="text-ink-900 font-black">Zakres:</strong> Website Design, Service Listings, Realizacje / Galeria, Formularz rezerwacji</>,
-    desc2: "Dla EcoCar Detailing stworzyliśmy nowoczesną stronę wizytówkową, która podkreśla profesjonalizm usług i ułatwia klientom szybkie znalezienie informacji o detailingu, rezerwację usług oraz przegląd realizacji. Strona zawiera przejrzysty katalog usług, galerię efektów pracy, intuicyjne formularze kontaktowe oraz blog edukacyjny, który buduje zaufanie i wspiera pozycjonowanie lokalne.",
-    hex: "#8dc63f",
-    tags: ["WZROST KONWERSJI O 21%", "WZROST LICZBY ZGŁOSZEŃ O 45%", "POPRAWA DOŚWIADCZENIA UŻYTKOWNIKÓW"],
-    mockup: "EcoCar Laptop Mockup"
+    desc1: <><strong className="text-ink-900 font-black">Branża:</strong> Auto Detailing / Pielęgnacja pojazdów<br/><strong className="text-ink-900 font-black">Zakres:</strong> Website Design, Service Listings, Realizacje / Galeria, Formularz rezerwacji, Blog / Treści HR</>,
+    desc2: "Dla EcoCar Detailing stworzyliśmy nowoczesną stronę wizytówkową, która podkreśla profesjonalizm usług i ułatwia klientom szybkie znalezienie informacji o detailingu, rezerwację usług oraz przegląd realizacji. Strona zawiera przejrzysty katalog usług, galerię efektów pracy, intuicyjne formularze kontaktowe oraz blog edukacyjny, który buduje zaufanie i wspiera pozycjonowanie lokalne",
+    hex: "#93C01F",
+    tags: ["Wzrost konwersji o x%", "Wzrost liczby zgłoszeń o x%", "Poprawa doświadczenia użytkowników"],
+    mockup: "EcoCar Detailing Laptop Mockup"
   },
   {
     id: 3,
-    client: "take2eu",
+    client: "OWS Europe",
     title: "Stabilny wzrost sprzedaży",
     desc1: <><strong className="text-ink-900 font-black">Branża:</strong> HVAC / Instalacje klimatyzacyjne i grzewcze<br/><strong className="text-ink-900 font-black">Zakres:</strong> Website Creation, Conversion Optimization, Ogłoszenia Promocyjne, Kontakt / Formularz / Lokalizacja, SEO lokalne</>,
     desc2: "Dla OWS Europe z Wrocławia zaprojektowaliśmy nowoczesną stronę, która w czytelny sposób prezentuje ofertę sprzedaży, montażu i serwisu klimatyzacji, pomp ciepła i wentylacji. Strona zawiera katalog usług, widoczne promocje, przejrzysty formularz kontaktowy i CTA, co zwiększa konwersje. Dzięki lokalnemu SEO firma zyskała lepszą widoczność w wynikach wyszukiwania dla klientów z Wrocławia i okolic.",
-    hex: "#4782c5",
-    tags: ["WZROST KONWERSJI O 12%", "WZROST LICZBY ZGŁOSZEŃ O 35%", "POPRAWA DOŚWIADCZENIA UŻYTKOWNIKÓW"],
-    mockup: "take2eu Laptop Mockup 1"
+    hex: "#5B95CA",
+    tags: ["Wzrost konwersji o x%", "Wzrost liczby zgłoszeń o x%", "Poprawa doświadczenia użytkowników"],
+    mockup: "OWS Europe Laptop Mockup 1"
   },
   {
     id: 4,
-    client: "KLIMA-T",
+    client: "Klimat24",
     title: "Stabilny wzrost sprzedaży",
     desc1: <><strong className="text-ink-900 font-black">Branża:</strong> Klimatyzacja / Systemy HVAC<br/><strong className="text-ink-900 font-black">Zakres:</strong> Poprawa SEO i contentu, kampanie Google Ads & Meta Ads, dedykowane landing page'e promocyjne, tworzenie strategii, projekt nowej strony w trakcie realizacji</>,
-    desc2: "Dla Klima-T wspieramy działania marketingowe: zoptymalizowaliśmy SEO i content na stronie pod frazy lokalne i usługowe, prowadzimy kampanie Google Ads oraz Meta Ads, tworzymy dedykowane landing page'e promocyjne skoncentrowane na konwersji, przygotowujemy spójną strategię marketingową i sprzedażową. Nowa strona internetowa jest obecnie w produkcji i będzie kolejnym krokiem w digitalizacji marki.",
-    hex: "#0510d7",
-    tags: ["WZROST KONWERSJI O 31%", "WZROST LICZBY ZGŁOSZEŃ O 4X", "POPRAWA DOŚWIADCZENIA UŻYTKOWNIKÓW"],
-    mockup: "Klimat IT Laptop Mockup"
+    desc2: "Dla Klimat24 wspieramy działania marketingowe: zoptymalizowaliśmy SEO i content na stronie pod frazy lokalne i usługowe, prowadzimy kampanie Google Ads oraz Meta Ads, tworzymy dedykowane landing page'e promocyjne skoncentrowane na konwersji, przygotowujemy spójną strategię marketingową i sprzedażową. Nowa strona internetowa jest obecnie w produkcji i będzie kolejnym krokiem w digitalizacji marki.",
+    hex: "#1030D0",
+    tags: ["Wzrost konwersji o x%", "Wzrost liczby zgłoszeń o x%", "Poprawa doświadczenia użytkowników"],
+    mockup: "Klimat24 Laptop Mockup"
+  },
+  {
+    id: 5,
+    client: "OWS Europe",
+    title: "Stabilny wzrost sprzedaży",
+    desc1: <><strong className="text-ink-900 font-black">Branża:</strong> HVAC / Instalacje klimatyzacyjne i grzewcze<br/><strong className="text-ink-900 font-black">Zakres:</strong> Website Creation, Conversion Optimization, Ogłoszenia Promocyjne, Kontakt / Formularz / Lokalizacja, SEO lokalne</>,
+    desc2: "Dla OWS Europe z Wrocławia zaprojektowaliśmy nowoczesną stronę, która w czytelny sposób prezentuje ofertę sprzedaży, montażu i serwisu klimatyzacji, pomp ciepła i wentylacji. Strona zawiera katalog usług, widoczne promocje, przejrzysty formularz kontaktowy i CTA, co zwiększa konwersje. Dzięki lokalnemu SEO firma zyskała lepszą widoczność w wynikach wyszukiwania dla klientów z Wrocławia i okolic.",
+    hex: "#1C2738",
+    tags: ["Wzrost konwersji o x%", "Wzrost liczby zgłoszeń o x%", "Poprawa doświadczenia użytkowników"],
+    mockup: "OWS Europe Laptop Mockup 2"
   }
 ];
 
@@ -53,7 +63,8 @@ export default function PortfolioPage() {
     <>
       <main className="flex-1">
         {/* HERO SECTION */}
-        <section className="relative bg-navy-950 pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden border-b border-white/5">
+        <div className="bg-[#fcfcfc]">
+<section className="relative bg-navy-950 flex flex-col justify-center overflow-hidden border-b border-white/5 w-full max-w-[1900px] mx-auto h-[735px] rounded-[20px] pt-20">
           <div className="absolute inset-0 z-0 opacity-20">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           </div>
@@ -74,6 +85,7 @@ export default function PortfolioPage() {
             </motion.div>
           </div>
         </section>
+        </div>
 
         {/* CASE STUDIES SECTION */}
         <section className="bg-[#fcfcfc] py-16 lg:py-24">
@@ -122,6 +134,12 @@ export default function PortfolioPage() {
                               {tag}
                             </div>
                           ))}
+                        </div>
+
+                        <div className="flex gap-2 mt-6">
+                          <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: project.hex }}></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gray-200"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gray-200"></div>
                         </div>
                       </div>
 

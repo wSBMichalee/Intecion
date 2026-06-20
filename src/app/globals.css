@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --navy-950: #0a0f1c;
-    --navy-900: #0f1629;
-    --navy-800: #1a233a;
-    --navy-700: #25314d;
+    --navy-950: #050A14;
+    --navy-900: #091423;
+    --navy-800: #0F1D31;
+    --navy-700: #1a233a;
     
-    --brand-600: #2563eb;
-    --brand-500: #3b82f6;
+    --brand-600: #1E90FF;
+    --brand-500: #39A0FF;
     --brand-400: #60a5fa;
     --brand-deep: #1d4ed8;
     
