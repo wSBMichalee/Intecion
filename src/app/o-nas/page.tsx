@@ -9,7 +9,7 @@ export default function AboutPage() {
       <main className="flex-1">
         {/* HERO SECTION */}
         <div className="bg-white">
-<section className="relative bg-navy-950 flex flex-col justify-center overflow-hidden border-b border-white/5 w-full max-w-[1900px] mx-auto h-[735px] rounded-[20px] pt-20">
+<section className="relative bg-navy-950 flex flex-col justify-center overflow-hidden border-b border-white/5 w-[calc(100%-20px)] mx-auto h-[735px] rounded-[20px] pt-20">
           <div className="absolute inset-0 z-0 opacity-20">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           </div>

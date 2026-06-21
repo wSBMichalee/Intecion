@@ -19,7 +19,7 @@ export function Testimonials() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="relative w-full overflow-hidden py-20 lg:py-28"
+      className="relative w-[calc(100%-20px)] mx-auto rounded-[20px] overflow-hidden py-20 lg:py-28 my-10"
       style={{
         background:
           "radial-gradient(ellipse at top left, #0068ad25 0%, transparent 60%), #010d18",

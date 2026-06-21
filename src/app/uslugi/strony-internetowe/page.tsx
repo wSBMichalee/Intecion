@@ -52,7 +52,7 @@ export default function WebsitesServices() {
       {/* ═══════════════════════════════════════════════════
           1. HERO
       ═══════════════════════════════════════════════════ */}
-      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center">
+      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center w-[calc(100%-20px)] mx-auto rounded-[20px]">
         {/* Grid pattern */}
         <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px]" />
         {/* Glow */}

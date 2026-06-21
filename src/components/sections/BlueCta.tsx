@@ -12,7 +12,7 @@ export function BlueCta() {
   };
 
   return (
-    <section className="relative w-full bg-[#064d7b] py-16 md:py-20 overflow-hidden">
+    <section className="relative w-[calc(100%-20px)] mx-auto rounded-[20px] bg-[#064d7b] py-16 md:py-20 overflow-hidden my-10">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <svg

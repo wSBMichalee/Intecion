@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function CtaBanner() {
   return (
-    <section className="relative w-full bg-navy-950 py-20 lg:py-28 overflow-hidden">
+    <section className="relative w-[calc(100%-20px)] mx-auto rounded-[20px] bg-navy-950 py-20 lg:py-28 overflow-hidden my-10">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <video

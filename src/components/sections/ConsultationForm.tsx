@@ -16,7 +16,7 @@ export function ConsultationForm({
   className = "",
 }: ConsultationFormProps) {
   return (
-    <section className={`bg-black py-20 lg:py-28 relative overflow-hidden ${className}`}>
+    <section className={`w-[calc(100%-20px)] mx-auto rounded-[20px] bg-black py-20 lg:py-28 relative overflow-hidden my-10 ${className}`}>
       {/* Background radial glow on the left */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-[#007acc]/20 via-black/0 to-transparent pointer-events-none"></div>
 
