@@ -83,17 +83,17 @@ export default function OutsourcingITPage() {
       {/* ═══════════════════════════════════════════════════
           1. HERO
       ═══════════════════════════════════════════════════ */}
-      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center w-[calc(100%-20px)] mx-auto rounded-[20px]">
+      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center w-[calc(100%-20px)] mx-auto my-[10px] rounded-[20px]">
         <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-500/10 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3 pointer-events-none z-0" />
 
         <div className="max-w-container mx-auto px-5 lg:px-8 relative z-20 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.9fr] gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col gap-6 lg:max-w-2xl"
+              className="flex flex-col gap-6 lg:max-w-[800px]"
             >
               <h1 className="text-[44px] md:text-[56px] lg:text-[72px] font-bold text-white leading-[1.1] tracking-tight">
                 Outsourcing IT, który odciąża Twój biznes

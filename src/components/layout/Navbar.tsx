@@ -76,7 +76,7 @@ export function Navbar() {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const { scrollY } = useScroll();
   const pathname = usePathname();
-  const hoverTimeoutRef = useRef<NodeJS.Timeout>();
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const handleMouseEnter = () => {
     if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
@@ -120,7 +120,7 @@ export function Navbar() {
       >
         <div className="max-w-[1200px] mx-auto w-full flex items-center justify-between">
           {/* Left Card: Logo */}
-          <div className="pointer-events-auto bg-navy-900/30 backdrop-blur-md border border-white/10 bg-gradient-to-br from-white/10 to-transparent shadow-lg rounded-2xl px-6 py-3 flex items-center transition-colors duration-300">
+          <div className="pointer-events-auto bg-navy-900/50 backdrop-blur-md border border-white/20 bg-gradient-to-br from-white/10 to-transparent shadow-lg rounded-2xl px-6 py-3 flex items-center transition-colors duration-300">
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/images/logo-intecion.png"

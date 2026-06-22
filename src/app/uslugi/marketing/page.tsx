@@ -51,14 +51,14 @@ export default function MarketingServices() {
       {/* ═══════════════════════════════════════════════════
           1. HERO
       ═══════════════════════════════════════════════════ */}
-      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center w-[calc(100%-20px)] mx-auto rounded-[20px]">
+      <section className="relative bg-navy-950 pt-[140px] pb-24 lg:pt-[180px] lg:pb-[100px] overflow-hidden min-h-[600px] flex items-center w-[calc(100%-20px)] mx-auto my-[10px] rounded-[20px]">
         {/* Grid pattern */}
         <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px]" />
         {/* Glow right */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-500/10 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3 pointer-events-none z-0" />
 
         <div className="max-w-container mx-auto px-5 lg:px-8 relative z-20 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
 
             {/* Left */}
             <motion.div
@@ -73,7 +73,7 @@ export default function MarketingServices() {
                 <span className="text-white text-[11px] font-bold tracking-widest font-mono uppercase">Marketing i pozycjonowanie</span>
               </div>
 
-              <h1 className="text-[42px] lg:text-[58px] font-bold text-white leading-[1.05] tracking-[-0.03em] max-w-[540px]">
+              <h1 className="text-[42px] lg:text-[58px] font-bold text-white leading-[1.05] tracking-[-0.03em] max-w-[800px]">
                 Marketing<br />i pozycjonowanie dla firm
               </h1>
 

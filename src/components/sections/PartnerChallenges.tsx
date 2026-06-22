@@ -59,7 +59,7 @@ export function PartnerChallenges() {
     <section className="bg-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 mb-12">
         <h2 className="font-heading text-3xl md:text-h2 text-ink-900 font-bold">
-          Widać te problemy w firmie na co dzień:
+          Współpracujemy z firmami, które:
         </h2>
       </div>
 
@@ -72,14 +72,14 @@ export function PartnerChallenges() {
               return (
                 <div
                   key={challenge.id}
-                  className="flex-[0_0_85%] sm:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0"
+                  className="flex-[0_0_481px] min-w-0"
                 >
                   <motion.div
                     variants={itemVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className={`h-full flex flex-col justify-between p-8 lg:p-10 min-h-[340px] transition-transform duration-300 hover:scale-[1.02] hover:z-10 cursor-default ${challenge.bgColor} ${challenge.textColor}`}
+                    className={`h-[456px] flex flex-col justify-between p-8 lg:p-10 transition-transform duration-300 hover:scale-[1.02] hover:z-10 cursor-default ${challenge.bgColor} ${challenge.textColor}`}
                   >
                     <div className="mb-6 opacity-80">
                       <IconComponent className="w-16 h-16" />
