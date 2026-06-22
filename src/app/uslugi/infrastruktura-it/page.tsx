@@ -774,7 +774,7 @@ export default function InfrastrukturaItPage() {
           </h2>
 
           <div className="w-full overflow-x-auto lg:overflow-x-visible pb-4">
-            <div className="flex flex-col xl:flex-row gap-12 xl:gap-[224px] items-start w-full max-w-[1470px] mx-auto">
+            <div className="flex flex-col xl:flex-row gap-12 xl:gap-[224px] items-stretch w-full max-w-[1470px] mx-auto">
               
               {/* Left Column: Categories and Tabs */}
               <div className="flex flex-col gap-10 bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 lg:p-8 backdrop-blur-md shadow-2xl shrink-0 w-full xl:w-[360px] min-h-[830px]">
@@ -930,8 +930,8 @@ export default function InfrastrukturaItPage() {
                       <h4 className="text-[13px] font-mono font-bold text-gray-500 uppercase tracking-widest leading-relaxed">
                         Chcesz wdrożyć <span className="text-white mx-1">{infrastructureTabs[activeTab].ctaHighlight}</span> w swojej firmie?
                       </h4>
-                      <Button href="/kontakt" className="shrink-0">
-                        Umów konsultację
+                      <Button href="/kontakt" className="shrink-0" showIcon={false}>
+                        UMÓW KONSULTACJĘ
                       </Button>
                     </div>
 
